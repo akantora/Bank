@@ -73,7 +73,7 @@ contract Bank {
         ownerAccountCount[msg.sender]++;
     }
     
-    function balanceOf(uint256 id) public view returns (uint256) {
+    function balanceOf() public view returns (uint256) {
         uint currentId = accountOwner[msg.sender];
         return accounts[currentId].balance;
     }
